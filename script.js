@@ -1,5 +1,7 @@
 let balloonContainer = document.getElementById('container');
 
+let text = document.getElementById('text');
+
 let popped = 0;
 
 function pop(balloon){
@@ -19,6 +21,8 @@ function removePop(balloon){
     if(popped == 32){
 
         balloonContainer.innerHTML = 'Congratulations! <br>You popped all 32 balloons!';
+        
+        text.innerHTML = '';
 
     }
 
